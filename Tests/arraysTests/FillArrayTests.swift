@@ -12,13 +12,11 @@ final class FillArrayTests: XCTestCase {
 
     func testFillArray(){
         var a = FillArray.fillArray(size: 3, value: 0, addNoise: false)
-        var b: [Double] = Array(repeating: 0, count: 3)
-        XCTAssertEqual(a, b)
+        XCTAssertEqual(a, [0, 0, 0])
         a = FillArray.fillArray(size: 5, value: 1, addNoise: false)
-        b = Array(repeating: 1, count: 5)
-        XCTAssertEqual(a, b)
+        XCTAssertEqual(a, [1, 1, 1, 1, 1])
         a = FillArray.fillArray(size: 5, value: 1, addNoise: true)
-        b = Array(repeating: 1.05, count: 5)
+        var b: [Double] = Array(repeating: 1.05, count: 5)
         var c: [Double] = Array(repeating: 0.95, count: 5)
         for element in a {
             XCTAssertTrue(element <= b[0])

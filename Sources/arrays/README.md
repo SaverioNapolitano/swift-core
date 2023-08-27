@@ -55,7 +55,7 @@ Examples:
 The method has the following prototype:
 
 ```
-public static double[] divideArray(double[] v, double factor);
+    public static func divideArray(v: [Double], factor: Double) -> [Double];
 ```
 
 where:

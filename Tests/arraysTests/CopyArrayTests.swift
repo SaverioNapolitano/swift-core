@@ -11,12 +11,10 @@ import arrays
 final class CopyArrayTests: XCTestCase {
     
     func testCopyArray() throws {
-        var a: [Double] = [1, 2, 3]
-        var b = CopyArray.copyArray(v: a)
-        XCTAssertEqual(a, b)
-        a = [2, 1, 1]
-        b = CopyArray.copyArray(v: a)
-        XCTAssertEqual(a, b)
+        var b = CopyArray.copyArray(v: [1, 2, 3])
+        XCTAssertEqual([1, 2, 3], b)
+        b = CopyArray.copyArray(v: [2, 1, 1])
+        XCTAssertEqual([2, 1, 1], b)
     }
 
 }
