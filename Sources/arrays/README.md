@@ -11,7 +11,7 @@ Examples:
 The method has the following prototype:
 
 ```
-public static double[] copyArray(double[] v);
+    public static func copyArray(v: [Double]) -> [Double];
 ```
 
 where:
@@ -20,8 +20,7 @@ where:
 
 ---
 
-**[FillArray.swift]** Write a method returning a double[] already filled with values (see swift.util.Arrays,
-swift.util.random.RandomGenerator).
+**[FillArray.swift]** Write a method returning a double[] already filled with values.
 
 Examples:
 
@@ -33,7 +32,7 @@ Examples:
 The method has the following prototype:
 
 ```
-public static double[] fillArray(int size, double value, boolean addNoise);
+    public static func fillArray(size: Int, value: Double, addNoise: Bool) -> [Double];
 ```
 
 where:
