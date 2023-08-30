@@ -1,7 +1,6 @@
 ## Swift Exercises (Arrays)
 
-**[CopyArray.swift]** Write a method accepting a double[] and returning a copy of the initial double[] (see
-System.arraycopy()).
+**[CopyArray.swift]** Write a method accepting a [Double] and returning a copy of the initial [Double].
 
 Examples:
 
@@ -11,7 +10,7 @@ Examples:
 The method has the following prototype:
 
 ```
-    public static func copyArray(v: [Double]) -> [Double];
+public static func copyArray(v: [Double]) -> [Double];
 ```
 
 where:
@@ -20,7 +19,7 @@ where:
 
 ---
 
-**[FillArray.swift]** Write a method returning a double[] already filled with values.
+**[FillArray.swift]** Write a method returning a [Double] already filled with values.
 
 Examples:
 
@@ -32,7 +31,7 @@ Examples:
 The method has the following prototype:
 
 ```
-    public static func fillArray(size: Int, value: Double, addNoise: Bool) -> [Double];
+public static func fillArray(size: Int, value: Double, addNoise: Bool) -> [Double];
 ```
 
 where:
@@ -43,8 +42,8 @@ where:
 
 ---
 
-**[DivideArray.swift]** Write a method accepting a double[] and a double value returning a different double[]
-representing the original double[] divided by factor.
+**[DivideArray.swift]** Write a method accepting a [Double] and a double value returning a different [Double]
+representing the original [Double] divided by factor.
 
 Examples:
 
@@ -55,17 +54,17 @@ Examples:
 The method has the following prototype:
 
 ```
-    public static func divideArray(v: [Double], factor: Double) -> [Double];
+public static func divideArray(v: [Double], factor: Double) -> [Double];
 ```
 
 where:
 
-* **v** is the double[] array to be processed.
+* **v** is the [Double] array to be processed.
 * **factor** is the divisor to be used.
 
 ---
 
-**[DivideArrays.swift]** Write a method accepting two double[] returning a different double[] representing the first
+**[DivideArrays.swift]** Write a method accepting two [Double] returning a different [Double] representing the first
 array divided by the second array. Every element of the first array is divided by the corresponding element of the
 second array. The two arrays must have the same size. Returns an empty array otherwise.
 
@@ -78,7 +77,7 @@ Examples:
 The method has the following prototype:
 
 ```
-    public static func divideArrays(v1: [Double], v2: [Double]) -> [Double];
+public static func divideArrays(v1: [Double], v2: [Double]) -> [Double];
 ```
 
 where:
@@ -88,7 +87,7 @@ where:
 
 ---
 
-**[Fibonacci.swift]** Write a method accepting an int and returning a long[] composed of the first n numbers of the
+**[Fibonacci.swift]** Write a method accepting an int and returning a [Int64] composed of the first n numbers of the
 Fibonacci series.
 
 Examples:
@@ -100,7 +99,7 @@ Examples:
 The method has the following prototype:
 
 ```
-public static long[] fibonacci(int n);
+public static func fibonacci(n: Int) -> [Int64];
 ```
 
 where:
@@ -122,8 +121,8 @@ Examples:
 The method has the following prototype:
 
 ```
-public static void bubbleSort(int[] v);
-public static int[] bubbleSortCopy(int[] v);
+public static func bubbleSort(v: [Int]);
+public static func bubbleSortCopy(v: [Int]) -> [Int];
 ```
 
 where:
@@ -143,7 +142,7 @@ Examples:
 The method has the following prototype:
 
 ```
-public static int[] moveZerosEnd(int[] v);
+public static func moveZerosEnd(v: [Int]) -> [Int];
 ```
 
 where:
