@@ -67,7 +67,7 @@ where:
 
 **[DivideArrays.swift]** Write a method accepting two double[] returning a different double[] representing the first
 array divided by the second array. Every element of the first array is divided by the corresponding element of the
-second array. The two arrays must have the same size. Returns null otherwise.
+second array. The two arrays must have the same size. Returns an empty array otherwise.
 
 Examples:
 
@@ -78,7 +78,7 @@ Examples:
 The method has the following prototype:
 
 ```
-public static double[] divideArrays(double[] v1, double[] v2);
+    public static func divideArrays(v1: [Double], v2: [Double]) -> [Double];
 ```
 
 where:
