@@ -108,9 +108,9 @@ where:
 
 ---
 
-**[BubbleSort.swift]** Write two methods for ordering an int[]. The only difference between the two methods is that the
-first one orders the original int[] directly and returns void, while the second one returns a sorted COPY of the
-original int[] (you can use the Bubble Sort algorithm).
+**[BubbleSort.swift]** Write two methods for ordering an [Int]. The only difference between the two methods is that the
+first one orders the original [Int] directly and returns void, while the second one returns a sorted COPY of the
+original [Int], (you can use the Bubble Sort algorithm).
 
 Examples:
 
@@ -127,7 +127,7 @@ public static func bubbleSortCopy(v: [Int]) -> [Int];
 
 where:
 
-* **v** is the int[] array to be sorted.
+* **v** is the [Int] array to be sorted.
 
 ---
 
