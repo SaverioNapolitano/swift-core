@@ -131,7 +131,7 @@ where:
 
 ---
 
-**[MoveZeroEnd.swift]** Write a method accepting an int[] eventually containing zeros and returning an int[] in which all the zeros are at the end of the array. Maintain the relative order of the other (non-zero) elements.
+**[MoveZeroEnd.swift]** Write a method accepting an [Int] eventually containing zeros and returning an [Int] in which all the zeros are at the end of the array. Maintain the relative order of the other (non-zero) elements.
 
 Examples:
 
@@ -142,12 +142,12 @@ Examples:
 The method has the following prototype:
 
 ```
-public static func moveZerosEnd(v: [Int]) -> [Int];
+public static func moveZeroEnd(v: [Int]) -> [Int];
 ```
 
 where:
 
-* **v** is the int[] array to be processed.
+* **v** is the [Int] array to be processed.
 
 ---
 
