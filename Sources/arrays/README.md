@@ -151,7 +151,7 @@ where:
 
 ---
 
-**[Splitter.swift]** Write a method accepting an int and returning the sequence of the digits as an int[].
+**[Splitter.swift]** Write a method accepting an int and returning the sequence of the digits as an [Int].
 
 Examples:
 
@@ -161,7 +161,7 @@ Examples:
 The method has the following prototype:
 
 ```
-public static int[] splitter(int input);
+public static func splitter(input: Int) -> [Int];
 ```
 
 where:
