@@ -19,7 +19,7 @@ public struct SearchArray {
     }
     
     public static func containsBinary(strings: [String], searched: String) -> Bool {
-        var copyStrings = strings.sorted()
+        let copyStrings = strings.sorted()
         return copyStrings.contains(searched)
     }
 }
