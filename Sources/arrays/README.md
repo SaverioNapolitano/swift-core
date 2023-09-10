@@ -182,12 +182,12 @@ Examples:
 The method has the following prototype:
 
 ```
-public static boolean isEverywhere(int[] v, int value);
+public static func isEverywhere(v: [Int], value: Int) -> Bool;
 ```
 
 where:
 
-* **v** is the int[] array to be processed.
+* **v** is the [Int] array to be processed.
 * **value** is the value to be verified (if it is everywhere).
 
 ---
@@ -204,19 +204,19 @@ Examples:
 The method has the following prototype:
 
 ```
-public static int[] tenRun(int[] v);
+public static func tenRun(v: [Int]) -> [Int];
 ```
 
 where:
 
-* **v** is the int[] array to be processed.
+* **v** is the [Int] array to be processed.
 
 ---
 
 **[FizzBuzz.swift]** Consider the series of numbers beginning at **start** and running up to but not including **end**.
-For example start=1 and end=5 gives the series 1, 2, 3, 4. Return a new String[] array containing the string form of
+For example start=1 and end=5 gives the series 1, 2, 3, 4. Return a new [String] array containing the string form of
 these numbers. For multiples of 3, use "Fizz" instead of the number, for multiples of 5 use "Buzz", and for multiples of
-both 3 and 5 use "FizzBuzz" (see Integer.toString()).
+both 3 and 5 use "FizzBuzz".
 
 Examples:
 
@@ -227,7 +227,7 @@ Examples:
 The method has the following prototype:
 
 ```
-public static String[] fizzBuzz(int start, int end);
+public static func fizzBuzz(start: Int, end: Int) -> [String];
 ```
 
 where:
@@ -237,7 +237,7 @@ where:
 
 ---
 
-**[MatchUp.swift]** Given two int[] v1 and v2 of the same length, for every element in v1, consider the corresponding
+**[MatchUp.swift]** Given two [Int] v1 and v2 of the same length, for every element in v1, consider the corresponding
 element in v2 (at the same index). Return the count of the number of times that the two elements differ by 2 or less,
 but are not equal.
 
@@ -250,7 +250,7 @@ Examples:
 The method has the following prototype:
 
 ```
-public static int matchUp(int[] v1, int[] v2);
+public static func matchUp(v1: [Int], v2: [Int]) -> Int;
 ```
 
 where:
@@ -272,7 +272,7 @@ Examples:
 The method has the following prototype:
 
 ```
-public static boolean canBalance(int[] v);
+public static func canBalance(v: [Int]) -> Bool;
 ```
 
 where:
@@ -281,10 +281,10 @@ where:
 
 ---
 
-**[SearchArray.swift]** Given a String[] and a String return true if the String is contained within the String[].
+**[SearchArray.swift]** Given a [String] and a String return true if the String is contained within the [String].
 If the String is not present return false. Write two different versions:
 (a) uses brute-force search (i.e., which is slow! because tests all elements of the array);
-(b) sorts the array and uses binary search (which is much faster!) (see swift.util.Arrays)
+(b) sorts the array and uses binary search (which is much faster!)
 
 Both versions should not modify the original array!
 
@@ -298,8 +298,8 @@ Examples:
 The method has the following prototype:
 
 ```
-public static boolean containsBruteForce(String[] strings, String searched);
-public static boolean containsBinary(String[] strings, String searched);
+public static func containsBruteForce(strings: [String], searched: String) -> Bool;
+public static func containsBinary(strings: [String], searched: String) -> Bool;
 ```
 
 where:
@@ -309,12 +309,12 @@ where:
 
 ---
 
-**[DeepCopy.swift]** Write a method accepting an int[][] and returning a deep copy of the original.
+**[DeepCopy.swift]** Write a method accepting an [[Int]] and returning a deep copy of the original.
 Deep copies differ from shallow copies in that the whole multidimensional array is duplicated instead of the first tier
 of pointers only.
 
 The method has the following prototype:
 
 ```
-public static int[][] deepCopy(int[][] original);
+public static func deepCopy(original: [[Int]]) -> [[Int]];
 ```
