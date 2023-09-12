@@ -121,8 +121,8 @@ Examples:
 The method has the following prototype:
 
 ```
-public static func bubbleSort(v: [Int]);
-public static func bubbleSortCopy(v: [Int]) -> [Int];
+public static func bubbleSort(v: inout [Int]);
+public static func bubbleSortCopy(v: inout [Int]) -> [Int];
 ```
 
 where:
@@ -204,7 +204,7 @@ Examples:
 The method has the following prototype:
 
 ```
-public static func tenRun(v: [Int]) -> [Int];
+public static func tenRun(v: inout [Int]) -> [Int];
 ```
 
 where:
